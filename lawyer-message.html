@@ -1,0 +1,83 @@
+<html>
+<head>
+	<link rel="stylesheet" href="lawyer-message.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Messages</title>
+</head>
+<body class="allbackground">
+        <header id="header">
+            <div class="container">
+
+                <div id="logo" class="pull-left">
+                    <h1><a href=index.html>Bono Pro</a></h1>
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+
+                        <li><a href="lawyer-search.html">Search</a></li>
+                        <li><a href="lawyer-profile.html">Profile</a></li>
+                        <li class="menu-active"><a href="lawyer-message.html">Messages</a></li>
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </header>
+    <br><br><br><br><br><br>
+
+	<div class="left_pane">
+		<div class="pane_title">
+			Contacts
+		</div>
+		<button id="0" class="active_contact" onclick="change_chat(0)">
+			Phil Smith
+		</button>
+		<button id="1" class="chat_name" onclick="change_chat(1)">
+			Patrick Johnson
+		</button>
+		<button id="2" class="chat_name" onclick="change_chat(2)">
+			Richard Altman
+		</button>
+		<button id="3" class="chat_name" onclick="change_chat(3)">
+			Elizabeth Gordon
+		</button>
+		<button id="4" class="chat_name" onclick="change_chat(4)">
+			Joseph Smith
+		</button>
+
+	</div>
+
+	<div id="conversation" class="chat">
+		<center><h2 id="name">Phil Smith</h2></center>
+		<hr>
+		<h4><center>Wednesday, March 14</h4></center>
+		<div class="message-row">
+			<div id="first_div" class="first_message">
+				<p id="firstThingSaid">Would it be possible to meet Tuesday at 2pm?</p>
+			</div>
+		</div>
+		<br><br><br>
+			<div id="response_div">
+				<p id="response_message"></p>
+			</div>
+		<br><br><br>
+		<div class="message-row">
+			<div id="final_div">
+				<p id="lastThingSaid">Great. See you then!</p>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="compose">
+		<textarea class="type_message" id="reply" rows="2" oninput="toggle_button()" value></textarea>
+		<!--<input type="text" id="reply" oninput="toggle_button" class="type_message">-->
+		<button class="send" id="send_button" disabled onclick="loadmessage()">Send</button>
+	</div>
+
+	<script src="lawyer-message.js"></script>
+</body>
+</html>

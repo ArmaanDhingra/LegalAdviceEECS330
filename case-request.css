@@ -1,0 +1,197 @@
+.allbackground{
+  	background-color: #CEEBF0;
+    text-align: center;
+}
+
+.headbar{
+	font-size: 35px;
+    color: #2b303a;
+    height: 90px;
+    border-bottom: solid thick #2b303a;
+    text-align: left;
+    font-family: 'Montserrat';
+    margin-top: 0px;
+    background-color: black;
+}
+
+
+a {
+  color: #41C7DB;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+.message {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.block-display{
+    display: block;
+    width: inherit;
+}
+
+
+.caseForm{
+    display: inline-block;
+    border-style: solid;
+    background-color: gainsboro;
+    text-align: left;
+    padding: 10px;
+}
+
+.submitButton{
+    width: 150px;
+    height: 50px;
+    font-family: 'Open Sans';
+    background-color: #003366;
+    color: white;
+}
+
+
+#header {
+
+  padding: 20px 0;
+  height: 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #003366;
+  z-index: 997;
+}
+
+#header #logo {
+  float: left;
+}
+
+#header #logo h1 {
+  font-size: 32px;
+  margin: 0;
+    margin-left: 10px;
+    font-weight: normal;
+
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+
+#header #logo h1 a:hover{
+  color: white;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 0 8px 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+
+  /* link colors */
+  color: #99FFFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  outline: none;
+}
+
+/* distance between li */
+.nav-menu > li {
+  margin-left: 30px;
+}
+
+
+.nav-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+
+  /* underline color */
+  background-color: #41C7DB;
+
+  /* this makes the link underline */
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* this makes the link underline */
+.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .menu-active > a:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  border: 1px solid #e7e7e7;
+}

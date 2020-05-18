@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="lawyer-search.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!-- Pure is licensed under the Yahoo! Inc. BSD License-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Search for Clients</title>
+    </head>
+    <body class="allbackground">
+        <header id="header">
+            <div class="container">
+
+                <div id="logo" class="pull-left">
+                    <h1><a href=index.html>Bono Pro</a></h1>
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+
+                        <li class="menu-active"><a href="lawyer-search.html">Search</a></li>
+                        <li><a href="lawyer-profile.html">Profile</a></li>
+                        <li><a href="lawyer-message.html">Messages &#x1F534;</a></li>
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </header>
+        <h2>Search for Clients!</h2>
+        <hr>
+        <div class="drop-down-area">
+            <div class="case-type">
+                <h4>Type of Case:</h4>
+                <select id="caseTypeSelect" onchange="filterResults()">
+                    <option value="any" selected="selected">Any</option>
+                    <option value="Eviction Law">Eviction</option>
+                    <option value="Intellectual Property Law">Intellectual Property</option>
+                    <option value="Accident Compensation">Accident Compensation</option>
+                    <option value="Immigration Law">Immigration Law</option>
+                </select>
+            </div>
+            <div class="price-range">
+                <h4>Budget:</h4>
+                <select id="priceRangeSelect" onchange="filterResults()">
+                    <option value="any" selected="selected">Any Price</option>
+                    <option value="0">Pro Bono Only</option>
+                    <option value="50">Up To $50/hr</option>
+                    <option value="100">Up To $100/hr</option>
+                    <option value="150">Up To $150/hr</option>
+                    <option value="9999">More Than $150/hr</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div id="search-results">
+            <h2 id="noResults">No Results Were Found.</h2>
+            <div id=clientTemplate class="div-centerer">
+                <div class="client-background">
+
+                    <div id="client-name">Chelsey Clinton</div>
+                    <div id="typey">Case Type: <span id="client-type">SWATing Law</span></div>
+                    <div id="budgety"><span id="client-rate">Infinite lol</span></div>
+                    <div id="emaily">Email: <span id="client-email">l337CODk1ng@yahoo.com</span></div>
+                    <div id="addressy">Address: <br><span id="client-location">1927 Orringon Ave 9999 <br> Evanston, IL 60201</span></div>
+                    <!--
+<div id="lawyer-school">Graduated from <div id="lawyer-school-name">Northwestern University, ></div><div id="lawyer-school-year">2019</div></div>
+<div id="lawyer-licensed">Licensed to practice in <div id="lawyer-states">A whole bunch of other places lets say this is maxtext</div></div>
+-->
+                    <button id="moreInfoButton" onclick="displayModal(this);">More Info</button>
+                    <button id="moreInfoButton" onclick="window.location.href='lawyer-message.html'">Message</button>
+                </div>
+            </div>
+            <!-- Following Code Adapted From https://css-tricks.com/star-ratings/ -->
+            <!-- Modal created with help from https://www.w3schools.com/howto/howto_css_modals.asp -->
+            <div id="moreInfoModal">
+                <div id="modalBox">
+                    <span onclick="closeModal()" class="xOut">&times;</span>
+                    <div id="modalContent">
+                        <br>
+                        <div id="modal-client-name">Name</div>
+                        <div id=typey>Case Type:<div id=modal-type>Murder</div></div>
+                        <div id=addressy>Address: <br><div id="modal-client-location">City, State</div></div>
+                        <div id=budgety>Compensation: <div id="modal-client-rate">Average Rate: $1-$1000000</div></div>
+                        <div id=emaily>Contact Email: <div id=modal-client-email>Murder</div></div>
+                        <br>
+                        <div id=decriptiony>Case Description:</div>
+                        <div id="modal-description">This is where the description goes.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="lawyer-search.js"></script>
+    </body>
+</html>

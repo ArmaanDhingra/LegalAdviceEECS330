@@ -1,0 +1,63 @@
+<html>
+    <head>
+                <!-- Bootstrap CSS File -->
+        <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="case-request.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Update Case Requirements</title>
+    </head>
+    <body class="allbackground">
+        <header id="header">
+            <div class="container">
+                <div id="logo" class="pull-left">
+                    <h1><a href=index.html>Bono Pro</a></h1>
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </header>
+        <br><br>
+        <div class="message">
+            <h2>Enter New Case Requirements</h2>
+        </div>
+        <br>
+        <form action="client-profile.html" class="questions">
+            <div class="caseForm">
+                <div>
+                    <label for="Case Type" class="block-display">Case Type:</label>
+                    <select id="case-type" class="case-type" required>
+                        <option selected disabled value>Select Your Type of Case</option>
+                        <option>Eviction</option>
+                        <option>Intellectual Property</option>
+                        <option>Accident Compensation</option>
+                        <option>Immigration Law</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="Your Budget" class="block-display">Your Budget:</label>
+                    <select id="budget" required>
+                        <option selected disabled value>Select Your Price Range</option>
+                        <option>Pro Bono Only</option>
+                        <option>Up to $50/hr</option>
+                        <option>Up to $100/hr</option>
+                        <option>Up to $150/hr</option>
+                        <option>More than $150/hr</option>
+                    </select>
+                </div>
+                <br>
+                <label for="Case Description" class="block-display">Case Description:</label>
+                <textarea rows="4" cols="50" required placeholder="Enter a short description of your case..."></textarea>
+                <br>
+                <br>
+                <input type="submit" href='client-profile.html' class="submitButton">
+            </div>
+        </form>
+    </body>
+</html>

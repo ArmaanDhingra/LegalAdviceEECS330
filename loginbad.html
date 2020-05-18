@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="loginbad.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Login</title>
+  </head>
+
+  <body class="allbackground">
+    <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href=index.html>Bono Pro</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+<div class="w3-panel w3-yellow w3-display-container">
+
+  <h3>Warning!</h3>
+  <p>Incorrect username or password</p>
+</div>
+
+    <form>
+
+
+      <div class="form-container">
+        <label   for="uname"><b>Username</b></label>
+        <input id="user" type="text" placeholder="Enter Username" name="uname" required>
+      </div>
+      <div class = "form-container">
+        <label for="psw" ><b>Password</b></label>
+        <input id ="pass" type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+      <!--<div class = "form-container">
+          <label>
+            <input type="checkbox" name="remember"> Remember me
+          </label>
+      </div> -->
+      <div class="user-options">
+        <input type="button" value="Login" onclick="check()"></input>
+        <input type="button" value="Cancel" onclick="window.location.href='index.html'"></input>
+      </div>
+    </form>
+
+    <!--
+    <div class="button-section">
+           <a href="index.html"><button class="login" type="submit">Login</button></a>
+          <a href="index.html"><button class="login" type="submit">Cancel</button></a>
+    </div>
+  -->
+  <script src="login.js"></script>
+  </body>
+
+
+
+</html>

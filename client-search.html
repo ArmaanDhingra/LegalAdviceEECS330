@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <!-- Bootstrap CSS File -->
+        <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!-- Pure is licensed under the Yahoo! Inc. BSD License-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="client-search.css">
+        <title>Search for Lawyers</title>
+    </head>
+    <body class="allbackground">
+        <header id="header">
+            <div class="container">
+
+                <div id="logo" class="pull-left">
+                    <h1><a href=index.html>Bono Pro</a></h1>
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+
+                        <li class="menu-active"><a href="client-search.html">Search</a></li>
+                        <li><a href="client-profile.html">Profile</a></li>
+                        <li><a href="client-message.html">Messages &#x1F534</a></li>
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </header>
+
+        <h2 class="montFont">Find or Search For a Lawyer</h2>
+        <hr>
+        <div class="drop-down-area">
+            <br><br><br>
+            <div class="case-type">
+                <h4 class="montFont">Type of Case:</h4>
+                <select id="caseTypeSelect" onchange="filterResults()">
+                    <option value="any" selected="selected">Any</option>
+                    <option value="Eviction Law">Eviction</option>
+                    <option value="Intellectual Property Law">Intellectual Property</option>
+                    <option value="Accident Compensation">Accident Compensation</option>
+                    <option value="Immigration Law">Immigration Law</option>
+                </select>
+            </div>
+            <div class="price-range">
+                <h4 class="montFont">Budget:</h4>
+                <select id="priceRangeSelect" onchange="filterResults()">
+                    <option value="any" selected="selected">Any Price</option>
+                    <option value="0">Pro Bono Only</option>
+                    <option value="50">Up To $50/hr</option>
+                    <option value="100">Up To $100/hr</option>
+                    <option value="150">Up To $150/hr</option>
+                    <option value="9999">More Than $150/hr</option>
+                </select>
+            </div>
+            <div class="years-range">
+                <h4 class="montFont">Years Lawyer Has Practiced:</h4>
+                <select id="yearRangeSelect" onchange="filterResults()">
+                    <option value="any" selected="selected">Any</option>
+                    <option value="5">5+ Years</option>
+                    <option value="10">10+ Years</option>
+                    <option value="20">20+ Years</option>
+                    <option value="30">30+ Years</option>
+                    <option value="40">40+ Years</option>
+                </select>
+            </div>
+        </div>
+        <h2 class="montFont"></h2>
+        <input id="nameSearch" type=text placeholder="Or Search by Name..." oninput="filterResults()">
+        <hr>
+        <div id="search-results">
+            <h2 id="noResults">No Results Were Found.</h2>
+            <div id="lawyerTemplate" class=div-centerer>
+                <div class="lawyer-background">
+                    <div class="lawyer-left-area">
+                        <img id="profile-picture" src="images/lawyerSample.png">
+                        <div id="rating">
+                            ★★★☆☆
+                        </div>
+                        <div id="lawyer-rate">Average Rate: $1-$1000000</div>
+                        <div class="logo-wrapper"><img id="lawyer-logo"></div>
+                        <div class="button-wrapper"><button class="content-button" onclick="window.location.href='lawyer-message.html'">Contact</button><button class="review-button" onclick="displayReviewModal(this)">Reviews</button></div>
+                    </div>
+                    <div class="lawyer-right-area">
+                        <div id="lawyer-name">Name</div>
+                        <div id="lawyer-firm">Sample, Sample, and Sample Law Firm</div>
+                        <div id="lawyer-specialization">Specializes in <div id="lawyer-type">being a good lawyer</div></div>
+                        <div id="lawyer-years-practicing">Practicing 99 years</div>
+                        <button id="moreInfoButton" onclick="displayInfoModal(this);">More Info</button>
+                    </div>
+                    <div class="offiseaddress"><h1 class="offiseaddress">  Office Address:</h1></div>
+                    <div class="address-text">
+                        <div id="lawyer-location">City, America</div>
+                    </div>
+                    <!-- Following Code Adapted From https://css-tricks.com/star-ratings/ -->
+
+                </div>
+            </div>
+        </div>
+        <!-- Modals created with help from https://www.w3schools.com/howto/howto_css_modals.asp -->
+        <div id="moreInfoModal">
+            <div id="modalBox1">
+                <span onclick="closeInfoModal()" class="xOut">&times;</span>
+                <div id="modalContent">
+                    <br>
+                    <img id="modal-profile-picture" src=images/lawyerSample.png>
+                    <div id="modal-lawyer-name">Name</div>
+                    <div id="modal-lawyer-firm">Sample, Sample, and Sample Law Firm</div>
+                    <div id="modal-lawyer-specialization">Specializes in <div id="modal-lawyer-type">being a good lawyer</div></div>
+                    <div id="modal-lawyer-years-practicing">Practicing 99 years</div>
+                    <div id="modal-lawyer-rate">Average Rate: $1-$1000000</div>
+                    <div id="modal-city-state">City, State</div>
+                    <div id="modal-description">This is where the description goes.</div>
+                    <div id="modal-school">Graduated from <div id="modal-school-name">College University,</div> <div id="modal-school-year">2049</div></div>
+                </div>
+            </div>
+        </div>
+        <div id="reviewModal">
+            <div id="modalBox2">
+                <span onclick="closeReviewModal()" class="xOut">&times;</span>
+                <div id="reviewModalContent">
+                    <h2>Reviews</h2>
+                </div>
+            </div>
+        </div>
+        <script src="client-search.js"></script>
+    </body>
+</html>

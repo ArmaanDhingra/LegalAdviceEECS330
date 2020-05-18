@@ -1,0 +1,146 @@
+<html>
+<head>
+  <link rel="stylesheet" href="lawyer-profile.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Pure is licensed under the Yahoo! Inc. BSD License-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Your Profile</title>
+</head>
+<body class="allbackground">
+  <header id="header">
+      <div class="container">
+
+        <div id="logo" class="pull-left">
+          <h1><a href=index.html>Bono Pro</a></h1>
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+
+            <li><a href="lawyer-search.html">Search</a></li>
+            <li class="menu-active"><a href="lawyer-profile.html">Profile</a></li>
+            <li><a href="lawyer-message.html">Messages &#x1F534;</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+      </div>
+    </header><!-- #header -->
+
+  <h2 id="myprofile">My Profile</h2>
+
+  <div class=bigcontainerdivforallofit>
+    <div id="pictures">
+      <div id="profile-pic"><img src="images/sara_baxter.jpg"></div>
+    </div>
+
+    <div id=uglysolution>
+      <div class=labelholder>
+        <h2 class=label >Profile Name:</h2>
+        <h2 class=label>Email:</h2>
+        <h2 class=label>City of Residence:</h2>
+        <h2 class=label>Specialty:</h2>
+        <h2 class=label>Years Practicing:</h2>
+        <h2 class=label>Rate:</h2>
+        <h2 class=label>J.D. School</h2>
+        <h2 class=label>Year of Graduation:</h2>
+      </div>
+
+      <div class="information">
+        <h2 class=infotext>Sarah Baxter</h2>
+        <h2 class=infotext>sarahbaxter@baxter3.com</h2>
+        <h2 class=infotext>Albuquerque, NM</h2>
+        <h2 class=infotext>Eviction Law</h2>
+        <h2 class=infotext>19</h2>
+        <h2 class=infotext>$150 per hour</h2>
+        <h2 class=infotext>Georgetown University</h2>
+        <h2 class=infotext>1996</h2>
+      </div>
+      <div class="button-wrapper">
+        <input class="content-button" type="button" value="Recent Clients" id="recents" onclick="displayModal()"></input>
+        <input class="content-button" type="button" value="My Reviews" id="recents" onclick="reviewyModal()"></input>
+        <input class="content-button" type="button" value="Logout" onclick="window.location.href='index.html'"></input>
+      </div>
+    </div>
+  </div>
+  <break><break>
+
+
+    <div id=uglysolution2>
+      <div id="logo-wrapper">
+        <div><img src="images/firm2.png" id="lawyer-logo"></div>
+      </div>
+
+      <div class=labelholder>
+        <h2 class=label>Firm:</h2>
+        <h2 class=label>Office Address:<span id=aligner>. . . . . . . . ..........</span></h2>
+        <break>
+          <h2 class=label>Description:</h2>
+        </div>
+        <div class="information">
+          <h2 class=infotext>Pietrucha Law Firm, LLC</h2>
+          <h2 class=infotext>1576 Los Robles Avenue, Suite 5, Albuquerque, NM 12345</h2>
+          <h2 id="description">Family-owned law firm operated by the Baxter family. Our lawyers are proud to help people in our community stand up for their rights, and we offer good discounts for low-income and underage people. If you find yourself in a bad situation, know you can always count on us.</h2>
+        </div>
+
+      </div>
+      <div id="moreInfoModal">
+        <div id="modalBox">
+          <span onclick="closeModal()" class="xOut">&times;</span>
+          <div id="modalContent">
+            <br>
+            <div id=contenty>
+              <div id="modal-client-name">Jenny Jones</div>
+              <div id=typey><div id=modal-type>Immigration Case</div></div>
+              <div id=budgety>Pay received: <span id="modal-client-rate">$500 ($100/hr)</span></div>
+              <div id=emaily>Email: <span id=modal-client-email>jennyjones@aol.com</span></div>
+            </div>
+            <div class="button-wrapper2"><input class="content-button" type="button" value="Contact" onclick="window.location.href='lawyer-message.html'"></input></div>
+          </div>
+          <div id="modalContent">
+            <br>
+            <div id=contenty>
+              <div id="modal-client-name">Carina Thompson</div>
+              <div id=typey><div id=modal-type>Accident Compensation Case</div></div>
+              <div id=budgety>Pay received: <span id="modal-client-rate">$700 ($50/hr)</span></div>
+              <div id=emaily>Email: <span id=modal-client-email>cthompson@aol.com</span></div>
+            </div>
+            <div class="button-wrapper2"><input class="content-button" type="button" value="Contact" onclick="window.location.href='lawyer-message.html'"></input></div>
+          </div>
+          <!--<div id="modalContent">
+          <br>
+          <div id=contenty>
+          <div id="modal-client-name">Bob Williams</div>
+          <div id=typey><div id=modal-type>Intellectual Property Case</div></div>
+          <div id=budgety>Pay received: <span id="modal-client-rate">$0</span></div>
+          <div id=emaily>Email: <span id=modal-client-email>bobwill@aol.com</span></div>
+        </div>
+        <div class="button-wrapper"><input class="content-button" type="button" value="View Profile" onclick="underConstruction()"></input></div>
+      </div>
+      <div id="modalContent">
+      <br>
+      <div id=contenty>
+      <div id="modal-client-name">James Johnson</div>
+      <div id=typey><div id=modal-type>Immigration Law Case</div></div>
+      <div id=budgety>Pay received: <span id="modal-client-rate">$2000 ($50/hr)</span></div>
+      <div id=emaily>Email: <span id=modal-client-email>jennyjones@aol.com</span></div>
+    </div>
+    <div class="button-wrapper"><input class="content-button" type="button" value="View Profile" onclick="underConstruction()"></input></div>
+  </div><-->
+</div>
+</div>
+<div id="reviewModal">
+  <div id="modalBox2">
+    <span onclick="closeReviewModal()" class="xOut">&times;</span>
+    <div id="reviewModalContent">
+      <h2 id="bold">Reviews</h2>
+      <div>★★★★☆</div>
+      <div class=review>★★★★★ Sara provided me with useful advice for my case!</div>
+      <div class=review>★★★☆☆ Although Sara was so helpful, I wish she was more punctual with answering emails. I once had to wait 3 days for a response, and that was especially frustrating.</div>
+    </div>
+  </div>
+</div>
+  </body>
+
+  <script src="lawyer-profile.js"></script>
+  </html>

@@ -1,0 +1,788 @@
+
+.lawyer-background{
+    width: 400px;
+    height: 400px;
+    background-color: #C5CEDD;
+    border-style: ridge;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    margin: 10px;
+    border: solid medium #2b303a;
+}
+
+a {
+  color: #41C7DB;
+      text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+.case-type{
+  float: left;
+}
+
+#caseTypeSelect{
+    width: 200px;
+    height: 30px;
+}
+
+#priceRangeSelect{
+    width: 200px;
+    height: 30px;
+}
+
+#yearRangeSelect{
+    width: 200px;
+    height: 30px;
+}
+
+#nameSearch{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.price-range{
+  float: left;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.years-range{
+  float: left;
+}
+
+.div-centerer{
+    justify-content: center;
+    width: 450px;
+    margin: 0px;
+    display: inline-block;
+}
+
+h1{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    font-family: 'Open Sans';
+}
+
+h4{
+    font-family: 'Open Sans';
+}
+
+.montFont{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+}
+
+.headbar{
+    font-size: 35px;
+    color: #2b303a;
+    background-color: black;
+    height: 90px;
+    border-bottom: solid thick #2b303a;
+    text-align: left;
+    font-family: 'Open Sans';
+    margin-top: 0px;
+}
+
+.login{
+    font-size: 18pt;
+    text-align: center;
+    align-content: center;
+    background-color: #006699;
+    font-family: 'Open Sans';
+    margin-top: 24px;
+    float: left;
+    margin-left: 20px;
+    color: white;
+    border: solid thick #3A7CA5;
+}
+
+.headbar h1{
+  margin: 0px;
+}
+
+.headbar-left{
+    float: left;
+}
+
+.headbar-right{
+    float: right;
+    margin-right: 25px;
+}
+
+#search-results{
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.contacts{
+    font-size: 12pt;
+    text-align: center;
+    align-content: center;
+    background-color: #8ae1fc;
+    font-family: 'Open Sans';
+    margin-top: 24px;
+    float: left;
+    border: solid medium #2b303a;
+}
+.messages{
+    font-size: 12pt;
+    text-align: center;
+    align-content: center;
+    font-family: 'Open Sans';
+    margin-top: 24px;
+    float: left;
+    margin-left: 20px;
+    color: white;
+}
+
+.login{
+    font-size: 12pt;
+    text-align: center;
+    align-content: center;
+    background-color: #8ae1fc;
+    font-family: 'Open Sans';
+    margin-top: 24px;
+    float: left;
+    margin-left: 20px;
+    border: solid medium #2b303a;
+}
+
+.allbackground{
+    background-color: #CEEBF0;
+    text-align: center;
+}
+
+.logo-wrapper{
+  height: 130px;
+  width: 130px;
+  margin: 5px;
+  margin-top: 8px;
+  text-align: center;
+  padding-left: 30px;
+}
+
+#noResults{
+    text-align: center;
+    display: none;
+    font-family: 'Open Sans';
+}
+
+#lawyerTemplate{
+    display: none;
+}
+
+.drop-down-area{
+    text-align: center;
+    display: inline-block;
+}
+
+.lawyer-left-area{
+    float: left;
+    width: 200px;
+    height: inherit;
+    text-align: center;
+    border-right: solid;
+    border-right-width: medium;
+    border-right-color: #2b303a;
+    color: #7c7c7c;
+}
+
+.lawyer-right-area{
+    float: right;
+    width: 197px;
+    height: 339px;
+    margin: 0px;
+}
+
+.address-text{
+    text-align: center;
+    font-size: 12px;
+    color: #7c7c7c;
+    float:right;
+    width: 197px;
+    align-self: flex-end;
+    font-family: 'Open Sans';
+
+}
+
+.offiseaddress{
+    text-align: left;
+    font-size: 10px;
+    font-style: italic;
+    height: 22px;
+    float: right;
+    width: 197px;
+    margin-bottom: 2px;
+    font-weight: normal;
+    border: none;
+    border-bottom: solid thin #2b303a;
+    font-family: 'Open Sans';
+    color: black;
+}
+.offiseaddress h1{
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    height: 20px;
+    float: right;
+    margin-left: 4px;
+    margin-bottom: 2px;
+    font-weight: normal;
+    border: none;
+    font-family: 'Open Sans';
+}
+
+#profile-picture{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    margin-bottom: 0px;
+}
+
+#lawyer-name{
+    text-align: center;
+    font-size: 24px;
+    color: #2b303a;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+
+}
+
+#lawyer-location{
+    text-align: center;
+    font-size: 12px;
+    height:40px;
+    color: #2b303a;
+    float:right;
+    width: 197px;
+    align-items: flex-end;
+    font-family: 'Open Sans';
+}
+
+#lawyer-firm{
+    text-align: center;
+    font-size: 12px;
+    color: #2b303a;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-family: 'Open Sans';
+}
+
+#lawyer-years-practicing{
+    text-align: center;
+    font-size: 18px;
+    color: #2b303a;
+    margin-bottom: 30px;
+    font-family: 'Open Sans';
+}
+
+#moreInfoButton{
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border: solid medium #003366;
+    background-color: #006699;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    cursor: grab;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+#moreInfoButton:hover{
+    background-color: #053d59;
+  transition-duration: 0.4s;
+}
+
+#lawyer-school{
+    font-size: 13px;
+    font-family: 'Tahoma';
+    margin-bottom: 20px;
+}
+
+#lawyer-school-name{
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+#lawyer-school-year{
+    font-family: 'Open Sans';
+}
+
+#lawyer-specialization{
+    text-align: center;
+    font-size: 18px;
+    color: #2b303a;
+    margin-bottom: 40px;
+    font-family: 'Open Sans';
+}
+
+#lawyer-type{
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+#lawyer-rate{
+    text-align: center;
+    font-size: 16px;
+    color: #2b303a;
+    margin-top: 0px;
+    font-family: 'Open Sans';
+}
+
+.button-wrapper{
+    width: inherit;
+    height: 50px;
+    text-align: left;
+    display: block;
+    margin-top: 0px;
+    cursor: grab;
+}
+
+.content-button{
+    width:100px;
+    height: 40px;
+    border: solid medium #003366;
+    background-color: #006699;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    cursor: grab;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+.content-button:hover{
+    background-color: #053d59;
+  transition-duration: 0.4s;
+}
+
+.review-button{
+    width:100px;
+    height: 40px;
+    border: solid medium #003366;
+    background-color: #006699;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    cursor: grab;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.review-button:hover{
+    background-color: #053d59;
+    transition-duration: 0.4s;
+}
+
+.rating{
+    font-size: 15px;
+    font-family: 'Open Sans';
+    text-align: center;
+    margin: 0px;
+    width: inherit;
+}
+
+#lawyer-logo{
+    height:auto;
+    width: auto;
+    max-height: 130px;
+    max-width: 130px;
+    align-self: center;
+}
+
+#lawyer-licensed{
+    font-family: 'Open Sans';
+}
+
+#lawyer-states{
+    font-family:'Open Sans';
+}
+
+#modal-profile-picture{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 0px;
+}
+
+#modal-lawyer-name{
+    text-align: left;
+    font-size: 20px;
+    color: #2b303a;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+
+}
+
+#modal-lawyer-firm{
+    text-align: left;
+    font-size: 12px;
+    color: #2b303a;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-family: 'Open Sans';
+}
+
+#modal-lawyer-specialization{
+    text-align: left;
+    font-size: 18px;
+    color: #2b303a;
+    margin-bottom: 15px;
+    font-family: 'Open Sans';
+}
+
+#modal-lawyer-type{
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+#modal-lawyer-years-practicing{
+    text-align: left;
+    font-size: 18px;
+    color: #2b303a;
+    margin-bottom: 15px;
+    font-family: 'Open Sans';
+}
+
+#modal-lawyer-rate{
+    text-align: left;
+    font-size: 16px;
+    color: #2b303a;
+    margin-bottom: 15px;
+    font-family: 'Open Sans';
+}
+
+#modal-city-state{
+    text-align: left;
+    font-size: 16px;
+    color: #2b303a;
+    margin-bottom: 15px;
+    font-family: 'Open Sans';
+}
+
+#modal-description{
+    text-align: left;
+    font-size: 16px;
+    color: #2b303a;
+    font-family: 'Open Sans';
+    margin-bottom: 15px;
+}
+
+#modal-school{
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Tahoma';
+}
+
+#modal-school-name{
+    font-family: 'Tahoma';
+    font-style: italic;
+}
+
+#modal-school-year{
+    font-family: 'Tahoma';
+}
+
+/* The following adapted from https://www.w3schools.com/howto/howto_css_modals.asp */
+#moreInfoModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.4);
+    right: 0;
+}
+
+#reviewModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.4);
+    right: 0;
+}
+
+#modalBox1 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+#modalBox2 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+#reviewModalContent
+{
+
+}
+
+#reviewTextarea
+{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.review{
+    text-align: left;
+    font-family: 'Open Sans';
+}
+
+#lawyerToReview
+{
+    font-size:14px;
+    font-family: 'Tahoma';
+}
+
+.xOut{
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.xOut:hover,
+.xOut:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Fade in Animation */
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.cover-up{
+    width: 150px;
+    height: 21px;
+    z-index: 2;
+    background-color: white;
+    position: relative;
+    margin-top: 3px;
+}
+
+#reviewTextarea{
+    margin-top: 3px;
+}
+#all{
+  text-align: center;
+}
+/* Star rating system adapted from Kate Morely at http://code.iamkate.com/html-and-css/star-rating-widget/. Licensed under CC0 1.0 Universal License. */
+.stars{
+    display: inline-block;
+    width:7.5em;
+    height: 1.5em;
+    overflow: none;
+    vertical-align: bottom;
+}
+
+.stars > input{
+    margin-right: -100%;
+    opacity: 0;
+}
+
+.stars > label{
+    display: block;
+    float: right;
+    position: relative;
+    background: url(images/star_off.png);
+    background-size: contain;
+}
+
+.stars > label:before{
+    content: '';
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    background: url(images/star_on.png);
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+
+.stars > label:hover:before,
+.stars > label:hover ~ label:before,
+.stars:not(:hover) > :checked ~ label:before{
+    opacity: 1;
+}
+
+#header {
+
+  padding: 20px 0;
+  height: 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #003366;
+  z-index: 997;
+}
+
+#header #logo {
+  float: left;
+}
+
+#header #logo h1 {
+  font-size: 32px;
+  margin: 0;
+
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+    margin-left: 10px;
+    font-weight: normal;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+
+#header #logo h1 a:hover{
+  color: white;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 0;
+    margin-right: 10px;
+}
+
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 0 8px 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+
+  /* link colors */
+  color: #99FFFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  outline: none;
+}
+
+/* distance between li */
+.nav-menu > li {
+  margin-left: 30px;
+}
+
+
+.nav-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+
+  /* underline color */
+  background-color: #41C7DB;
+
+  /* this makes the link underline */
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* this makes the link underline */
+.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .menu-active > a:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  border: 1px solid #e7e7e7;
+}

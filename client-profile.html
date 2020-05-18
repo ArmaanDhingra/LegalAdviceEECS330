@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="client-profile.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Pure is licensed under the Yahoo! Inc. BSD License-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Your Profile</title>
+</head>
+
+<body class="allbackground">
+  <header id="header">
+      <div class="container">
+
+        <div id="logo" class="pull-left">
+          <h1><a href=index.html>Bono Pro</a></h1>
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+
+            <li><a href="client-search.html">Search</a></li>
+            <li class="menu-active"><a href="client-profile.html">Profile</a></li>
+            <li><a href="client-message.html">Messages &#x1F534</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+      </div>
+    </header><!-- #header -->
+  <div id=all>
+  <h2 id="myprofile">My Profile</h2>
+    <div id=uglysolution2>
+      <div class=labelholder>
+        <h2 class=label >Profile Name:</h2>
+        <h2 class=label>Email:</h2>
+        <h2 class=label>Address:</h2>
+        <h2 class=label>Case Type:</h2>
+        <h2 class=label>Budget:</h2>
+        <h2 class=label>Date of Birth</h2>
+        <h2 class=label>Description:</h2>
+      </div>
+
+      <div class="information">
+        <h2 class=infotext>Phil Smith</h2>
+        <h2 class=infotext>philasmith@aol.com</h2>
+        <h2 class=infotext>1234 Clark Street, Evanston, IL 60901</h2>
+        <h2 class=infotext>Accident Compensation</h2>
+        <h2 class=infotext>$150/hour</h2>
+        <h2 class=infotext>October 21st, 1983</h2>
+        <h2 class=infotext>Seeking assistance to help recieve the money I deserve after being injured on the job.</h2>
+      </div>
+      <div class=button-wrapper>
+        <div class="button-wrapper"><input class="content-button" type="button" value="Recent Contacts" onclick="displayInfoModal()"></input><input class="content-button" type="button" value="New Case" onclick="window.location.href='case-request.html'"></input>
+        <input class="content-button" type="button" value="Logout" onclick="window.location.href='index.html'"></input></div>
+      </div>
+    </div>
+
+    <div id="moreInfoModal">
+      <div id="modalBox">
+        <span onclick="closeInfoModal()" class="xOut">&times;</span>
+        <div id="modalContent">
+          <div id=stuff>
+          <div id="modal-client-name">John Baxter</div>
+          <div id=typey><span id=modal-type>Intellectual Property Lawyer</span></div>
+          <div id=addressy>Firm: <span id="modal-client-location">Baxter, Baxter & Baxter</span></div>
+          <div id=budgety>Cost: <span id="modal-client-rate">$500 ($100/hr)</span></div>
+          <div id=emaily>Contact Email: <span id=modal-client-email>johnbaxter@baxfirm.org</span></div>
+        </div>
+
+        <div class="button-wrapper2"><input class="modal-content-button" type="button" value="Message" onclick="window.location.href='client-message.html'"></input>
+          <input class="modal-content-button" type="button" value="Review" onclick=displayReviewModal2()></input>
+      </div></div>
+        <div id="modalContent">
+          <div id=stuff>
+          <div id="modal-client-name">George Leopold</div>
+          <div id=typey><span id=modal-type>Accident Compensation Lawyer</span></div>
+          <div id=addressy>Firm: <span id="modal-client-location">Business Law Solutions</span></div>
+          <div id=budgety>Cost: <span id="modal-client-rate">$0 ($0/hr)</span></div>
+          <div id=emaily>Contact Email: <span id=modal-client-email>johnbaxter@baxfirm.org</span></div>
+        </div>
+      <div class="button-wrapper2"><input class="modal-content-button" type="button" value="Message" onclick="window.location.href='client-message.html'">
+      <input class="modal-content-button" type="button" value="Review" onclick=displayReviewModal1()></input>
+      </div>
+      </div>
+    </div>
+    <div id="reviewModal">
+        <div id="modalBox2">
+            <span onclick="closeReviewModal()" class="xOut">&times;</span>
+            <div id="reviewModalContent">
+                <h2 id="reviewName">Leave a Review</h2>
+                <!-- Star rating system adapted from Kate Morely at http://code.iamkate.com/html-and-css/star-rating-widget/. Licensed under CC0 1.0 Universal License.-->
+                <div class="stars">
+                    <input id="rating5" type="radio" name="rating" value="5">
+                    <label for="rating5">5</label>
+                    <input id="rating4" type="radio" name="rating" value="4">
+                    <label for="rating4">4</label>
+                    <input id="rating3" type="radio" name="rating" value="3">
+                    <label for="rating3">3</label>
+                    <input id="rating2" type="radio" name="rating" value="2">
+                    <label for="rating2">2</label>
+                    <input id="rating1" type="radio" name="rating" value="1">
+                    <label for="rating1">1</label>
+                    <div class="cover-up"></div>
+                </div>
+                <br><br>
+                <textarea id="reviewTextarea" maxlength="500" placeholder="Leave a Short Review..." oninput="updateSubmitButton()"></textarea>
+                <br><br>
+                <input id="reviewSubmitButton" type="button" value="Submit" onclick="addReview(this)"></input>
+                <!-- <hr>
+                <h2>Reviews</h2> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Snackbar adapted from https://www.w3schools.com/howto/howto_js_snackbar.asp -->
+<div id="snackbar">Review Submitted!</div>
+<script src="client-profile.js"></script>
+</body>
+</html>
